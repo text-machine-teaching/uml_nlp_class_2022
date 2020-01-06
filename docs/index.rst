@@ -6,7 +6,17 @@
 Welcome to Read the Docs Template's documentation!
 ==================================================
 
-Try to edit this page directly from the Github
+This is Text-Machine lab wiki. Hopefully, all information about servers setup, student guides, FAQ (how to update CUDA, etc.) will be placed here.
+
+Please, use it. We do need a common place to share structured info.
+
+Recommendations:
+
+* *Bad article is better than no article.*
+* Keep wiki structure as flat as possible, max depth of 2 covers 99% of all cases. 
+* Use markdown syntax to make your post better formatted.
+* Grammarly is a good resource to check your writing before submission
+
 
 Contents:
 
