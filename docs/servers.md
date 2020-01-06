@@ -1,9 +1,9 @@
 > How to create/restore an account, who has sudo, soft- and hardware setups, ...
 ---
 
-# Server setup and management
+# Resources
 
-## Setup
+## Servers
 
 We currently have 5 servers with GPUs installed and 1 server with a lot of memory but no GPU.
 All servers run Ubuntu, so you should be comfortable constantly typing commands in a terminal.
@@ -83,3 +83,8 @@ For example, for a user Alexey Romanov, the username would be `aromanov`.
 
 * All servers must run Ubuntu release that is a) supported b) LTS (long-term). Best, if it is the latest LTS.
 * CUDA should be updated such that the latest version of PyTorch supports it.
+
+## Other resources
+
+We also have Digital Ocean Droplets of university infrastructure, if you need to host a servise.
+If you need a lot of compute (GPU-weeks) use PyTorch Distributed. If you need more (GPU-months), apply for TensorFlow Research Cloud resources (free GPUs and TPUs in Google Cloud for research purposes). You can try to ask David for advice.
