@@ -3,17 +3,19 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to Read the Docs Template's documentation!
+Welcome to Text Machine Lab wiki!
 ==================================================
 
 This is Text Machine Lab wiki. Hopefully, all information about servers setup, student guides, FAQ (how to update CUDA, etc.) will be placed here.
 
 Please, use it. We do need a common place to share structured info.
 
+To add/update this wiki, simply push `Edit on GitHub` button in the top-right corner. You have to be a part of [github.com/text-machine-lab](https://github.com/text-machine-lab) in order to push directly into the master branch and this is a recommended way to do it. The website is automatically updated after a push to the repository, so you don't need to do anything else (just to wait about a minute or so). More can be found in :ref:`usage` section
+
 Recommendations:
 
 * *Bad article is better than no article.*
-* Keep wiki structure as flat as possible, max depth of 2 covers 99% of all cases. 
+* Keep wiki structure as flat as possible.
 * Use markdown syntax to make your post better formatted.
 * Grammarly is a good resource to check your writing before submission
 
@@ -25,13 +27,3 @@ Contents:
    :glob:
 
    *
-
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
-
