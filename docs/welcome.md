@@ -5,13 +5,13 @@ Hello newcomer! \<Welcome message>
 If you have any troubles or questions, do not hesitate to ask anybody.
 We are interested in your progress just as you are and glad to help.
 
-# Lab networking
+## Lab networking
 We use [Slack](https://text-machine-test.slack.com/), Telegram and [Google group](https://groups.google.com/forum/#!aboutgroup/text-machine) for communication.
 Subscribe to the google group and ask Vlad or Olga to add you to Slack.
 
 Our GitHub: [github.com/text-machine-lab/](https://github.com/text-machine-lab)
 
-# How to connect to servers
+## How to connect to servers
 
 First, you should ask Vlad or Olga for account.
 If you are not familiar with ssh, read [this](https://www.digitalocean.com/community/tutorials/ssh-essentials-working-with-ssh-servers-clients-and-keys).
@@ -58,7 +58,7 @@ ssh-copy-id enki
 
 It would allow you to connect to the server without typing your password.
 
-# Git and project template
+## Git and project template
 
 **Always** use git for your projects. `git init` should be the first thing you type in your new project.
 This is a [project template](https://github.com/Guitaricet/ml-project-template) that can be useful for you.
@@ -66,7 +66,7 @@ Just click "use this template" and it will create GitHub repository for you. It 
 
 Most of research projects are poorly structured, but you can be better that the most.
 
-# Code style
+## Code style
 
 * First, remember that you write code to read it, not only to run it. And worse the project is written, harder to return to it after a few months.
 * Use python>=3.6, we are way past 2015.
@@ -82,13 +82,13 @@ Hello newcomer!
 If you have any troubles or questions, do not hesitate to ask anybody.
 We are interested in your progress just as you are and glad to help.
 
-# Lab networking
+## Lab networking
 We use [Slack](https://text-machine-test.slack.com/), Telegram and [Google group](https://groups.google.com/forum/#!aboutgroup/text-machine) for communication.
 Subscribe to the google group and ask Vlad or Olga to add you to Slack.
 
 Our GitHub: [github.com/text-machine-lab/](https://github.com/text-machine-lab)
 
-# How to connect to servers
+## How to connect to servers
 
 First, you should ask Vlad or Olga for an account.
 If you are not familiar with ssh, read [this](https://www.digitalocean.com/community/tutorials/ssh-essentials-working-with-ssh-servers-clients-and-keys).
@@ -135,7 +135,7 @@ ssh-copy-id enki
 
 It would allow you to connect to the server without typing your password.
 
-# Git and a project template
+## Git and a project template
 
 **Always** use git for your projects. `git init` should be the first thing you type in your new project.
 This is a [project template](https://github.com/Guitaricet/ml-project-template) that can be useful for you.
@@ -143,7 +143,7 @@ Just click "use this template" and it will create a GitHub repository for you. I
 
 Most research projects are poorly structured, but you can be better than the most.
 
-# Code style
+## Code style
 
 * First, remember that you write code to read it, not only to run it. And the worse project is written, harder it is to continue it after a few months.
 * Use python>=3.6, we are way past 2015.
