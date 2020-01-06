@@ -1,7 +1,9 @@
 > How to create/restore an account, who has sudo, soft- and hardware setups, ...
 ---
 
-# Setup
+# Server setup and management
+
+## Setup
 
 We currently have 5 servers with GPUs installed and 1 server with a lot of memory but no GPU.
 All servers run Ubuntu, so you should be comfortable constantly typing commands in a terminal.
@@ -23,7 +25,7 @@ CPU-only:
 If you have problems connecting to a server or wish to create an account, please contact the corresponding administrator.
 If you don’t currently have an account, you can use the teaching lab’s workstations in DAN417 (each one of them has a GPU).
 
-# Installing drivers and CUDA
+## Installing drivers and CUDA
 
 > This guide ~~may be~~ is outdated. **Think** before doing anything
 
@@ -62,12 +64,12 @@ If you don’t currently have an account, you can use the teaching lab’s works
 1. Reboot the system
 1. Run nvidia-smi to check that GPUs are visible
 
-# User management
+## User management
 
 In general, all user accounts should have the name following the template <first letter of first name><last name>.
 For example, for a user Alexey Romanov, the username would be `aromanov`.
 
-# Useful commands
+## Useful commands
 
 * View all users: `getent passwd`
 * View sudo users: `getent group sudo | cut -d: -f4`
@@ -77,7 +79,7 @@ For example, for a user Alexey Romanov, the username would be `aromanov`.
 * Add a group: `sudo addgroup GROUPNAME`
 * Set primary group: `usermod -g GROUPNAME USERNAME`
 
-# Some of administrator responsibilities
+## Some of administrator responsibilities
 
 * All servers must run Ubuntu release that is a) supported b) LTS (long-term). Best, if it is the latest LTS.
 * CUDA should be updated such that the latest version of PyTorch supports it.
