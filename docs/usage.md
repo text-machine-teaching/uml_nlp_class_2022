@@ -6,6 +6,6 @@ We prefer Markdown over reStructuredText text in this wiki ([cheatsheet](https:/
 
 However, do not update either of `make.bat`, `index.rst`, `history.rst`, `conf.py` or `Makefile` without knowing how Sphinx works and what you are actually doing.
 
-## Maitainer info
+### Maitainer info
 
 This wiki is hosted using [readthedocs.org](https://readthedocs.org/), you can ask Vlad for the credentials. Good example of Sphinx usage (and common python practices) can be found [in this project](https://github.com/audreyr/binaryornot).
