@@ -2,6 +2,4 @@
 Usage
 ========
 
-To use this template, simply update it::
-
-	import read-the-docs-template
+To add/update this wiki, simply push **Edit on GitHub** button in the top-right corner.
