@@ -6,7 +6,7 @@
 Welcome to Read the Docs Template's documentation!
 ==================================================
 
-This is Text-Machine lab wiki. Hopefully, all information about servers setup, student guides, FAQ (how to update CUDA, etc.) will be placed here.
+This is Text Machine Lab wiki. Hopefully, all information about servers setup, student guides, FAQ (how to update CUDA, etc.) will be placed here.
 
 Please, use it. We do need a common place to share structured info.
 
