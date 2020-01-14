@@ -6,6 +6,38 @@ We prefer Markdown over reStructuredText text in this wiki ([cheatsheet](https:/
 
 However, do not update either of `make.bat`, `index.rst`, `history.rst`, `conf.py` or `Makefile` without knowing how Sphinx works and what you are actually doing.
 
+### Including images
+
+If you want to include an image to a wiki page, use
+
+```markdown
+![My image caption](http://url/to/your/image)
+```
+
+for external URLs (preferred method).
+
+In the case of your own images, place them to `docs/img` directory and specify a local path in the markdown
+
+```markdown
+![My image caption](./img/my-image.png)
+```
+
+You can also use HTML (but keep things simple), for example, if you want to control image size
+
+```html
+<img src="./img/my-image.png" width="300"/>
+```
+
+OR
+
+```html
+<figure>
+    <img src='./img/my-image.png' width="300"/>
+    <figcaption>My image capiton</figcaption>
+</figure>
+```
+
+
 ### Maitainer info
 
-This wiki is hosted using [readthedocs.org](https://readthedocs.org/), you can ask Vlad for the credentials. Good example of Sphinx usage (and common python practices) can be found [in this project](https://github.com/audreyr/binaryornot).
+This wiki is hosted using [readthedocs.org](https://readthedocs.org/), you can ask Vlad for the credentials. A good example of Sphinx usage (and common python practices) can be found [in this project](https://github.com/audreyr/binaryornot).
