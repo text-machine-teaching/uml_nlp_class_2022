@@ -7,6 +7,9 @@ If you really need to use reST (we do advise against this as it raises the bar f
 
 However, do not update either of `make.bat`, `index.rst`, `history.rst`, `conf.py` or `Makefile` without knowing how Sphinx works and what you are actually doing.
 
+Also, please check you changes before the commit using "Preview changes" button on GitHub. Markdown is easy, but it can be tricky sometimes.
+
+
 ### Including images
 
 If you want to include an image to a wiki page, use
@@ -36,6 +39,14 @@ OR
     <img src='./img/my-image.png' width="300"/>
     <figcaption>My image capiton</figcaption>
 </figure>
+```
+
+### Internal links
+
+Markdown does not support internal links (to local `.md` files), but there is a workaround. Use **external** links to this website, e.g.
+
+```markdown
+[Link to Usage section](https://text-machine-wiki.readthedocs.io/en/latest/usage.html)
 ```
 
 
