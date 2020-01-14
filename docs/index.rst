@@ -11,7 +11,7 @@ This is a Text Machine Lab wiki.
 Hopefully, all information about servers setup, student guides, FAQ (how to update CUDA, etc.) will be placed here.
 Please, **use it**, edit it and write it. We do need a common place to share structured info.
 
-To add/update this wiki, simply push `Edit on GitHub` button in the top-right corner. You have to be a part of [github.com/text-machine-lab](https://github.com/text-machine-lab) in order to push directly into the master branch, and this is a recommended way to do it. The website is automatically updated after a push to the repository, so you don't need to do anything else (just to wait about a minute or so). More can be found in the `Usage` section.
+To add/update this wiki, simply push `Edit on GitHub` button in the top-right corner. You have to be a part of `github.com/text-machine-lab <https://github.com/text-machine-lab/>` in order to push directly into the master branch, and this is a recommended way to do it. The website is automatically updated after a push to the repository, so you don't need to do anything else (just to wait about a minute or so). More can be found in the `Usage` section.
 
 Recommendations:
 
