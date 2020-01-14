@@ -7,6 +7,7 @@ Welcome to Text Machine Lab wiki!
 ==================================================
 
 This is a Text Machine Lab wiki.
+If you are a new member, start with our Welcome Guide.
 
 Hopefully, all information about servers setup, student guides, FAQ (how to update CUDA, etc.) will be placed here.
 Please, **use it**, edit it and write it. We do need a common place to share structured info.
