@@ -1,7 +1,7 @@
 > How to create/restore an account, who has sudo, soft- and hardware setups, ...
 ---
 
-# Resources
+# Compute Resources
 
 ## Servers
 
