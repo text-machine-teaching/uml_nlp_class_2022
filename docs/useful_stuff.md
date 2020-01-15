@@ -21,6 +21,7 @@
 * [Towardsdatascience](https://towardsdatascience.com) - a good blog about DS
 * [Kaggle](https://kaggle.com) - data science competitions (with free GPUs!)
     * [kaggle.com/notebooks](https://kaggle.com/notebooks) - a lot of examples and how-tos for basically anything
+* [Google Colaboratory](https://colab.research.google.com) - a (heavily modified by Google) jupyter notebook server with free GPU and **TPU**; not very usefull, but a free TPU is a free TPU (50 Gb of RAM and blazing fast)
 * [ruder.io](https://ruder.io) - Sebastian Ruder blog
     * [Ruder Newsletter](https://ruder.io/nlp-news/) - concise monthly reviews of NLP state
 * [Paperswithcode](https://paperswithcode.com) - an awesome aggregator of papers and github repositories
