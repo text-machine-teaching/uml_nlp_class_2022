@@ -21,10 +21,10 @@
 * [Towardsdatascience](https://towardsdatascience.com) - a good blog about DS
 * [Kaggle](https://kaggle.com) - data science competitions (with free GPUs!)
     * [kaggle.com/notebooks](https://kaggle.com/notebooks) - a lot of examples and how-tos for basically anything
-* [Google Colaboratory](https://colab.research.google.com) - a (heavily modified by Google) jupyter notebook server with a free GPU and **TPU**; not very usefull, but a free TPU is a free TPU (50 Gb of RAM and blazing fast)
-* [TensorFlow Research Cloud](https://www.tensorflow.org/tfrc) - a Google initiative that sponsos cool research projects with free TPU-hours in GCP, apply if you want to pre-train something really big
+* [Google Colaboratory](https://colab.research.google.com) - a (heavily modified by Google) jupyter notebook server with a free GPU and **TPU**; not very useful, but a free TPU is a free TPU (50 Gb of RAM and blazing fast)
+* [TensorFlow Research Cloud](https://www.tensorflow.org/tfrc) - a Google initiative that sponsors cool research projects with free TPU-hours in GCP, apply if you want to pre-train something huge
 * [ruder.io](https://ruder.io) - Sebastian Ruder blog
     * [Ruder Newsletter](https://ruder.io/nlp-news/) - concise monthly reviews of NLP state
-* [Paperswithcode](https://paperswithcode.com) - an awesome aggregator of papers and github repositories
+* [Paperswithcode](https://paperswithcode.com) - an awesome aggregator of papers and GitHub repositories
     * [paperswithcode.com/sota](https://paperswithcode.com/sota) - leaderboard aggregator, pretty good for finding datasets
 * [PhDcomics](http://phdcomics.com/) - they know that feel bro
