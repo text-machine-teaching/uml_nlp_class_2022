@@ -13,6 +13,8 @@
 ### Blogs and other stuff
 * [Arxiv CS.CL twitter](https://twitter.com/arxiv_cs_cl) - an infinite stream of fresh papers, perfect in the morning
     * [Arxiv-sanity](http://www.arxiv-sanity.com/search?q=cs.CL) - a tool that helps you to keep track of new staff and to stay sane
+* [PyTorch blog on Medium](https://medium.com/pytorch)
+* [Facebook AI Research blog](https://ai.facebook.com/blog/)
 * [Distill.pub](https://distill.pub) - an excellent blog with visualizations of difficult NN concepts
 * [Inference](https://www.inference.vc) - posts on machine learning, statistics, opinions on things (more about the theoretical side)
 * [Off the convex path](http://www.offconvex.org/) - deep learning theory blog
