@@ -1,6 +1,22 @@
 # Useful stuff
 
+### Learning resources
 * Stanford [cs224n](http://web.stanford.edu/class/cs224n/index.html) "Natural Language Processing with Deep Learning" class and their [video lectures](https://www.youtube.com/watch?v=8rXD5-xhemo&list=PLoROMvodv4rOhcuXMZkNm7j3fVwBBY42z) (highly recommend)
 * Stanford [cs231n](http://cs231n.github.io/) notes about neural networks
+* [fast.ai](https://fast.ai) - hipster courses on deep learning, pretty good ones
+* [BERT Fine-Tuning Tutorial with PyTorch](https://mccormickml.com/2019/07/22/BERT-fine-tuning/)
 * [Deep Learning Book](https://www.deeplearningbook.org/)
+
+### Libraries
 * HuggingFace [Transformers](https://github.com/huggingface/transformers) and [Tokenizers](https://github.com/huggingface/tokenizers)
+
+### Blogs and other stuff
+* [Distill.pub](https://distill.pub) - an excellent blog with visualizations of difficult NN concepts
+* [Inference](https://www.inference.vc) - posts on machine learning, statistics, opinions on things (more about the theoretical side)
+* [Off the convex path](http://www.offconvex.org/) - deep learning theory blog
+* [Towardsdatascience](https://towardsdatascience.com) - a good blog about DS
+* [Kaggle](https://kaggle.com) - data science competitions (with free GPUs!), also [kaggle.com/notebooks](https://kaggle.com/notebooks) has a lot of examples and how-tos for basically anything
+* [ruder.io](https://ruder.io) - Sebastian Ruder blog
+    * [Ruder Newsletter](https://ruder.io/nlp-news/) - concise monthly reviews of NLP state
+* [Paperswithcode](https://paperswithcode.com) - an awesome aggregator of papers and github repositories
+    * [paperswithcode.com/sota](https://paperswithcode.com/sota) - leaderboard aggregator, pretty good for finding datasets
