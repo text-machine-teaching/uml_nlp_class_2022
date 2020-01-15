@@ -15,7 +15,8 @@
 * [Inference](https://www.inference.vc) - posts on machine learning, statistics, opinions on things (more about the theoretical side)
 * [Off the convex path](http://www.offconvex.org/) - deep learning theory blog
 * [Towardsdatascience](https://towardsdatascience.com) - a good blog about DS
-* [Kaggle](https://kaggle.com) - data science competitions (with free GPUs!), also [kaggle.com/notebooks](https://kaggle.com/notebooks) has a lot of examples and how-tos for basically anything
+* [Kaggle](https://kaggle.com) - data science competitions (with free GPUs!)
+    * [kaggle.com/notebooks](https://kaggle.com/notebooks) - a lot of examples and how-tos for basically anything
 * [ruder.io](https://ruder.io) - Sebastian Ruder blog
     * [Ruder Newsletter](https://ruder.io/nlp-news/) - concise monthly reviews of NLP state
 * [Paperswithcode](https://paperswithcode.com) - an awesome aggregator of papers and github repositories
