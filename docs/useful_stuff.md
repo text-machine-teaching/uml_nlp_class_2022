@@ -20,3 +20,4 @@
     * [Ruder Newsletter](https://ruder.io/nlp-news/) - concise monthly reviews of NLP state
 * [Paperswithcode](https://paperswithcode.com) - an awesome aggregator of papers and github repositories
     * [paperswithcode.com/sota](https://paperswithcode.com/sota) - leaderboard aggregator, pretty good for finding datasets
+* [PhDcomics](http://phdcomics.com/) - they know that feel bro
