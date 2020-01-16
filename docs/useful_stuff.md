@@ -11,6 +11,7 @@
 * HuggingFace [Transformers](https://github.com/huggingface/transformers) and [Tokenizers](https://github.com/huggingface/tokenizers)
 * [Knock Knock](https://github.com/huggingface/knockknock) - get notified when your training ends with only two additional lines of code
 * [Weights and Biases](https://www.wandb.com) - the best way to monitor your experiments (bye tensorboard!)
+* [tqdm](https://github.com/tqdm/tqdm) - a very simple, fast and extensible progress bar for python and CLI
 
 ### Blogs and other stuff
 * [Arxiv CS.CL twitter](https://twitter.com/arxiv_cs_cl) - an infinite stream of fresh papers, perfect in the morning
