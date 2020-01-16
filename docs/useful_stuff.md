@@ -3,7 +3,7 @@
 ### Learning resources
 * Stanford [cs224n](http://web.stanford.edu/class/cs224n/index.html) "Natural Language Processing with Deep Learning" class and their [video lectures](https://www.youtube.com/watch?v=8rXD5-xhemo&list=PLoROMvodv4rOhcuXMZkNm7j3fVwBBY42z) (highly recommend)
 * Stanford [cs231n](http://cs231n.github.io/) notes about neural networks
-* [fast.ai](https://fast.ai) - hipster courses on deep learning, pretty good ones
+* [fast.ai](https://www.fast.ai/) - hipster courses on deep learning, pretty good ones
 * [BERT Fine-Tuning Tutorial with PyTorch](https://mccormickml.com/2019/07/22/BERT-fine-tuning/)
 * [Deep Learning Book](https://www.deeplearningbook.org/)
 
