@@ -7,8 +7,10 @@
 * [BERT Fine-Tuning Tutorial with PyTorch](https://mccormickml.com/2019/07/22/BERT-fine-tuning/)
 * [Deep Learning Book](https://www.deeplearningbook.org/)
 
-### Libraries
+### Libraries and services
 * HuggingFace [Transformers](https://github.com/huggingface/transformers) and [Tokenizers](https://github.com/huggingface/tokenizers)
+* [Knock Knock](https://github.com/huggingface/knockknock) - get notified when your training ends with only two additional lines of code
+* [Weights and Biases](https://www.wandb.com) - the best way to monitor your experiments (bye tensorboard!)
 
 ### Blogs and other stuff
 * [Arxiv CS.CL twitter](https://twitter.com/arxiv_cs_cl) - an infinite stream of fresh papers, perfect in the morning
