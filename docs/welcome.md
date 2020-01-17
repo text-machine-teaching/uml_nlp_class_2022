@@ -14,6 +14,15 @@ Subscribe to the google group and ask Vlad or Olga to add you to Slack.
 
 Our GitHub: [github.com/text-machine-lab/](https://github.com/text-machine-lab)
 
+> Slack can be tricky, and you should not expect it to notify everyone about each of your messages.
+This is not a bug; this is a feature to respect your work-life balance.
+To force-notify the lab, you can write "@everyone" in #general or to force-notify a channel, you can write "@channel".
+E.g., "@everyone, my paper just got accepted to EMNLP!"
+
+We have regular(-ish) meetings on Tuesday at 4 pm where we discuss papers and the work done this week.
+Follow text-machine google group and #reading_club channel for updates.
+
+
 ## How to connect to servers
 
 First, you should ask Vlad or Olga for an account.
@@ -24,7 +33,6 @@ After that, add to your `.ssh/config` the following:
  Host cs
          User <YOUR_CS_USERNAME>
          HostName cs.uml.edu
-         ServerAliveInterval 120 # a hack to bypass session length limit
  Host enki
          User <YOUR_USERNAME>
          HostName 172.16.33.13
@@ -60,6 +68,8 @@ ssh-copy-id enki
 ```
 
 It would allow you to connect to the server without typing your password.
+
+> If your session keep being disconnected every hour, add `ServerAliveInterval 120` to `Host cs`
 
 ## Git and a project template
 
