@@ -86,5 +86,15 @@ For example, for a user Alexey Romanov, the username would be `aromanov`.
 
 ## Other resources
 
-We also have Digital Ocean Droplets of university infrastructure, if you need to host a servise.
-If you need a lot of compute (GPU-weeks) use PyTorch Distributed. If you need more (GPU-months), apply for TensorFlow Research Cloud resources (free GPUs and TPUs in Google Cloud for research purposes). You can try to ask David for advice.
+* Digital Ocean Droplets and university infrastructure (if you need to host a servise)
+* Multiple GPUs (days of compute): just learn PyTorch Distributed to utilize multiple GPUs
+    * [official guide](https://pytorch.org/tutorials/intermediate/dist_tuto.html) (which we do not recommend)
+    * [related medium post](https://medium.com/huggingface/training-larger-batches-practical-tips-on-1-gpu-multi-gpu-distributed-setups-ec88c3e51255)
+    * [lightning](https://towardsdatascience.com/how-to-refactor-your-pytorch-code-to-get-these-42-benefits-of-pytorch-lighting-6fdd0dc97538) module which makes it very easy to use
+    * You can also use PyTorch DataParallel (and it is easier), but it is less efficient
+    * **Note:** always test that your multi-GPU setup if actually faster than a single GPU on a small subset of your data
+* [TensorFlow Research Cloud](https://www.tensorflow.org/tfrc) (months of compute): TFRC allows to access free TPUs for research purposes, consult with somebody from the lab before applying
+
+## If you need help
+
+You can ask any hardware-related questions in Slack #hardware channel
