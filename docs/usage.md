@@ -58,4 +58,4 @@ This wiki is hosted using [readthedocs.org](https://readthedocs.org/), you can a
 Here are some Sphinx extentions you may want to include at some point:
   * `nbsphinx` - Jupyter renderer
   * `sphinx.ext.autosectionlabel` - easy references to document sections
-  * tensorflow docs-like theme - `pt_lightning_sphinx_theme`
+  * tensorflow docs-like theme - [github](github.com/PyTorchLightning/lightning_sphinx_theme), [example](https://pytorch-lightning.readthedocs.io/en/latest/)
