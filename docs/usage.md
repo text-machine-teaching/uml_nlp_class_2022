@@ -53,3 +53,9 @@ Markdown does not support internal links (to local `.md` files), but there is a 
 ### Maitainer info
 
 This wiki is hosted using [readthedocs.org](https://readthedocs.org/), you can ask Vlad for the credentials. A good example of Sphinx usage (and common python practices) can be found [in this project](https://github.com/audreyr/binaryornot).
+
+
+Here are some Sphinx extentions you may want to include at some point:
+  * `nbsphinx` - Jupyter renderer
+  * `sphinx.ext.autosectionlabel` - easy references to document sections
+  * tensorflow docs-like theme - `pt_lightning_sphinx_theme`
