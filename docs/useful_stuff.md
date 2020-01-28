@@ -12,6 +12,7 @@
 * [Knock Knock](https://github.com/huggingface/knockknock) - get notified when your training ends with only two additional lines of code
 * [Weights and Biases](https://www.wandb.com) - the best way to monitor your experiments (bye tensorboard!)
 * [tqdm](https://github.com/tqdm/tqdm) - a very simple, fast and extensible progress bar for python and CLI
+* [NVIDIA Apex](https://github.com/NVIDIA/apex) - easy way to use [Mixed Precision](https://medium.com/@jonathan_hui/mixed-precision-in-deep-learning-67f6dce3e0f3) (use it if you're out of GPU memory)
 
 ### Blogs and other stuff
 * [Arxiv CS.CL twitter](https://twitter.com/arxiv_cs_cl) - an infinite stream of fresh papers, perfect in the morning
