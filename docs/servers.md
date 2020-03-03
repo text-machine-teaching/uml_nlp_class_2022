@@ -48,6 +48,14 @@ sudo apt autoremove
 
   * "Installation failed. See log at /tmp/cuda-installer.log for details" - see the log first. If this is driver error, just remove [x] from driver installation when installing cuda (we installed the driver at the previous step, remember?)
 
+## Installing Apex
+
+[Nvidia Apex](https://github.com/NVIDIA/apex) is a library that allows you to speed up training / reduce memory requirements in just a few lines of code (or no code at all!). It is used in many externali libraries (like fairSeq and Megatron) and just makes things better. Use it.
+
+Follow installation instructions in the official README.md
+
+Possible issues:
+  * If your CUDA version does not match Apex version completely, installation will fail on purpose ("Cuda extensions are being compiled with a version of Cuda that does not match the version used to compile Pytorch binaries"). To get around this you can comment out this check in setup.py file and hope for the best.
 
 ## User management
 
