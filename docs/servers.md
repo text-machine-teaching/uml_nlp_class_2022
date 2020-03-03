@@ -27,42 +27,27 @@ If you don’t currently have an account, you can use the teaching lab’s works
 
 ## Installing drivers and CUDA
 
-> This guide ~~may be~~ is outdated. **Think** before doing anything
+Follow [this guide](https://gist.github.com/wangruohui/df039f0dc434d6486f5d4d098aa52d07)
 
-1. Install the drivers using the graphics-drivers ppa:
-    1. Link: https://launchpad.net/~graphics-drivers/+archive/ubuntu/ppa
-    1. Add ppa: sudo add-apt-repository ppa:graphics-drivers/ppa
-    1. Update apt-get: sudo apt-get update
-    1. Install the drivers: apt-get install nvidia-430 (you’d need to replace `430` with the current long-lived release
-    1. Reboot the system
+Recommendations: 
+  * Do everything in tmux session in case ssh connection is interrupted (it will!)
+  * Call `sudo ./cuda_10.2.89_440.33.01_linux.run` instead of `./cuda_10.2.89_440.33.01_linux.run`
+  * After installing cuda you may see a warning `Incomplete installation! This installation did not install the CUDA Driver.` - don't worry, just ignore it (you already have the driver)
+  * Remember to install [cuDNN](https://developer.nvidia.com/cudnn)! Select "cuDNN Library for Linux" instead of "cuDNN Runtime Library for Ubuntu18.04 (Deb)" because you don't want to suffer deleteing .deb packages when reinstalling the CUDA next time. You cannot use `wget` to download cuDNN (because NVIDIA sucks) so download it to your computer and `scp` to the server.
+  * Untar cuDNN as `sudo` to create symlinks
 
-1. Install cuda using the run-file installer
-    1. Link: https://developer.nvidia.com/cuda-zone
+Possible issues:
+  * "Existing package manager installation of the driver found" - the problem is that somebody installed CUDA via package manager (you sick bastard!). You need to find what exactly is installed and delete is using `sudo apt-get purge <PACKAGE_NAME>` and to execute `sudo apt autoremove` after that. You can also try to do this (but the result and safety of these commands are not guaranteeed):
 
-1. `sudo sh cuda_<version>_linux.run`
-    1. Do not agree to install the drivers
-    1. Do not agree to install OpenCL
-    1. Agree to install only the CUDA and, maybe, CUDA samples
-    1. Do not forget to run ldconfig after the installation 
-    1. Create a file /etc/ld.so.conf.d/cuda.conf
-    1. Insert the path to the cuda’s lib dir into this file: /usr/local/cuda/lib64
-    1. Run sudo ldconfig
-    1. Add the bin dir to your PATH variable
-    1. See here: https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html#post-installation-actions
-    1. Or, to install it globally, add `PATH=$PATH:/usr/local/cuda/bin` to `/etc/profile` text file (sudo required)
+```bash
+sudo apt-get purge cuda
+sudo apt-get purge nvidia-cuda-toolkit
+sudo apt-get purge "cuda*"
+sudo apt autoremove
+```
 
-1. Install cuDNN using by copying the files 
-    1. [Link](https://developer.nvidia.com/cudnn)
-    1. Extract the downloaded archive
-    1. Copy the files:
-    ```
-    cd <path to the content>
-    sudo cp -P include/cudnn.h /usr/local/cuda/include/
-    sudo cp -P lib64/libcudnn* /usr/local/cuda/lib64/
-    sudo chmod a+r /usr/local/cuda/lib64/libcudnn*
-    ```
-1. Reboot the system
-1. Run nvidia-smi to check that GPUs are visible
+  * "Installation failed. See log at /tmp/cuda-installer.log for details" - see the log first. If this is driver error, just remove [x] from driver installation when installing cuda (we installed the driver at the previous step, remember?)
+
 
 ## User management
 
