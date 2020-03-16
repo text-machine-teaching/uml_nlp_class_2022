@@ -30,6 +30,7 @@ import os
 # ones.
 extensions = [
     'recommonmark',  # markdown support
+    'sphinx_markdown_tables', # markdown tables support
 ]
 
 # Add any paths that contain templates here, relative to this directory.
