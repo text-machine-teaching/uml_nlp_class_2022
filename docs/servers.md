@@ -35,6 +35,7 @@ Follow [this guide](https://gist.github.com/wangruohui/df039f0dc434d6486f5d4d098
 
 Recommendations: 
   * Use `Latest Long Lived Branch` for drivers
+  * You can always just `sudo apt install nvidia-driver-DRIVERNUMNBER`
   * Do everything in tmux session in case ssh connection is interrupted (it will!)
   * Call `sudo ./cuda_10.2.89_440.33.01_linux.run` instead of `./cuda_10.2.89_440.33.01_linux.run`
   * After installing cuda you may see a warning `Incomplete installation! This installation did not install the CUDA Driver.` - don't worry, just ignore it (you already have the driver)
