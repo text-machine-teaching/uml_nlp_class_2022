@@ -264,3 +264,4 @@ Store them in the cloud, not on our local servers / your machine.
 ### Additional readings
   * [PyTorch docs on reproducibility](https://pytorch.org/docs/stable/notes/randomness.html)
   * [Fully reproducible research paper example](https://github.com/ibab/fully-reproducible)
+  * [Independently Reproducible Machine Learning](https://thegradient.pub/independently-reproducible-machine-learning)
