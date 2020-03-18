@@ -1,4 +1,4 @@
-# Usage
+# Using the wiki
 
 To add/update this wiki, simply push `Edit on GitHub` button in the top-right corner. You *don't need to fork it*, but have to be a part of [github.com/text-machine-lab](https://github.com/text-machine-lab) in order to push directly into the master branch and this is a *recommended way* to edit text-machine wiki. The website is automatically updated after a push to the repository, so you don't need to do anything else (just to wait about a minute or so).
 
