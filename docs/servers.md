@@ -17,7 +17,7 @@ GPU-enabled:
 | IP           | Domain            | GPUs                    | CUDA version |
 |--------------|-------------------|-------------------------|--------------|
 | 172.16.33.17 | inanna.cs.uml.edu | 3x GTX 1080             | 10.2         |
-| 172.16.33.13 | enki.cs.uml.edu   | 2x Titan X              | 9.1          |
+| 172.16.33.13 | enki.cs.uml.edu   | 2x Titan X              | 10.2         |
 | 172.16.33.15 | shala.cs.uml.edu  | 3x GTX 1080             | 10.1         |
 | 172.16.33.14 | ishkur.cs.uml.edu | 2x GTX 1080, 1x Titan X | 10.1         |
 | 172.16.33.9  | marduk.cs.uml.edu | 3x Tesla K40 (outdated) | ??           |
