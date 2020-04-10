@@ -12,6 +12,8 @@ Ask Vlad if you want to work on it.
 
 ## Mixup augmentation for NLP
 
+**Goal:** test mixup augmentation on NLP tasks and achieve some SOTAs
+
 **Short description:**
 NLP augmentation is not widely used.
 The main reason for this is the snobbery of NLP researchers who think that
