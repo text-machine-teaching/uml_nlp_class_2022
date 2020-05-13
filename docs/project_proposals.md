@@ -24,3 +24,9 @@ So let's apply
 and see if it helps the model to achieve better performance on language modeling and downstream tasks.
 
 Ask Vlad if you want to work on it.
+
+## BERT-motivator for controllable text generation
+
+**Goal:** apply adversarial decomposition idea to pre-trained models to control text genration parameters
+
+Ask Vlad if you want to work on it.
