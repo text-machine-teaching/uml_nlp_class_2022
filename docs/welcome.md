@@ -81,6 +81,8 @@ Most research projects are poorly structured, but you can be better than the mos
 
 ## Code style
 
+Read this post: [Nine simple steps for better-looking python code](https://towardsdatascience.com/nine-simple-steps-for-better-looking-python-code-87e5d9d3b1cf)
+
 * First, remember that you write code to read it, not only to run it. And the worse project is written, harder it is to continue it after a few months.
 * Use python>=3.6, we are way past 2015.
 * Please, use a linter (we recommend flake8 for VS Code and default linter for PyCharm) for your code
