@@ -7,7 +7,7 @@ Welcome to Text Machine Lab wiki!
 ==================================================
 
 This is a Text Machine Lab wiki.
-If you are a new member, start with our `Welcome Guide <https://text-machine-wiki.readthedocs.io/en/latest/welcome.html>`_ and `Useful Staff <https://text-machine-wiki.readthedocs.io/en/latest/useful_stuff.html>`_ pages.
+If you are a new member, start with our `Welcome Guide <https://text-machine-wiki.readthedocs.io/en/latest/welcome.html>`_ and `Useful Stuff <https://text-machine-wiki.readthedocs.io/en/latest/useful_stuff.html>`_ pages.
 
 If you are looking for some files (detailed servers specs and so on), use our `shared google drive <https://drive.google.com/drive/folders/1NR9-31CcRhQ--LUQvDQ5mjPDwH_q_ple?usp=sharing>`_. If you don't have the access, ask Anna for it.
 
