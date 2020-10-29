@@ -29,6 +29,24 @@ CPU-only:
 If you have problems connecting to a server or wish to create an account, please contact the corresponding administrator.
 If you don’t currently have an account, you can use the teaching lab’s workstations in DAN417 (each one of them has a GPU).
 
+### Detailed Shala spec
+
+| thing        | thing spec       |
+|--------------|-------------------|
+| CPU	         | Intel Boxed Core i7-6850K |
+| Motherboard 	| ASRock ATX DDR4 Motherboard | 
+| RAM.        	| 64GB DDR4 2400 |
+| Full Tower Case	| Corsair Obsidian Series 750D |
+| SSD	         | Samsung 850 EVO 500GB |
+| HDD	         | WD Red Pro 3TB |
+| Power Supply	| EVGA Supernova G2 1300W |
+| CPU Cooler	  | Cooler Master Hyper 212 EVO |
+| GPU      	  | EVGA GeForce GTX 1080 |
+
+### Detailed Inanna spec
+
+https://pcpartpicker.com/list/NQ8gD2
+
 ## Installing drivers and CUDA
 
 Follow [this guide](https://gist.github.com/wangruohui/df039f0dc434d6486f5d4d098aa52d07)
