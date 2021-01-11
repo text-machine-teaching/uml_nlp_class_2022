@@ -59,6 +59,7 @@ Recommendations:
   * Call `sudo ./cuda_10.2.89_440.33.01_linux.run` instead of `./cuda_10.2.89_440.33.01_linux.run`
   * After installing cuda you may see a warning `Incomplete installation! This installation did not install the CUDA Driver.` - don't worry, just ignore it (you already have the driver)
   * Remember to install [cuDNN](https://developer.nvidia.com/cudnn)! Select "cuDNN Library for Linux" instead of "cuDNN Runtime Library for Ubuntu18.04 (Deb)" because you don't want to suffer deleteing .deb packages when reinstalling the CUDA next time. You cannot use `wget` to download cuDNN (because NVIDIA sucks) so download it to your computer and `scp` to the server.
+  * To download cudnn directly to the server use [this hack](https://stackoverflow.com/questions/31279494/how-to-install-cudnn-from-command-line)
   * Untar cuDNN as `sudo` to create symlinks
 
 Possible issues:
