@@ -52,8 +52,9 @@ https://pcpartpicker.com/list/NQ8gD2
 Follow [this guide](https://gist.github.com/wangruohui/df039f0dc434d6486f5d4d098aa52d07)
 
 Recommendations: 
+  * Do not install via apt get. It will cause a lot pain to the next person who will be updating the drivers.
   * Use `Latest Long Lived Branch` for drivers
-  * You can always just `sudo apt install nvidia-driver-DRIVERNUMNBER`
+  * Remember to `sudo apt-get install build-essential dkms` and `chmod +x` the installation file. Read the guide carefuly!
   * Do everything in tmux session in case ssh connection is interrupted (it will!)
   * Call `sudo ./cuda_10.2.89_440.33.01_linux.run` instead of `./cuda_10.2.89_440.33.01_linux.run`
   * After installing cuda you may see a warning `Incomplete installation! This installation did not install the CUDA Driver.` - don't worry, just ignore it (you already have the driver)
