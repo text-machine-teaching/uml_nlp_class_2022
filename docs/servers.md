@@ -14,13 +14,13 @@ For establishing an ssh connection, you can either use IPs or server names as fo
 
 GPU-enabled:
 
-| IP           | Domain            | GPUs                    | CUDA version |
-|--------------|-------------------|-------------------------|--------------|
-| 172.16.33.17 | inanna.cs.uml.edu | 3x GTX 1080             | 10.2         |
-| 172.16.33.13 | enki.cs.uml.edu   | 2x Titan X              | 10.2         |
-| 172.16.33.15 | shala.cs.uml.edu  | 1x GTX 1080             | 10.1         |
-| 172.16.33.14 | ishkur.cs.uml.edu | 2x GTX 1080, 1x Titan X | 10.1         |
-| 172.16.33.9  | marduk.cs.uml.edu | 3x Tesla K40 (outdated) | ??           |
+| IP           | Domain            | GPUs                     | CUDA version |
+|--------------|-------------------|--------------------------|--------------|
+| 172.16.33.17 | inanna.cs.uml.edu | 3x GTX 1080              | 10.2         |
+| 172.16.33.13 | enki.cs.uml.edu   | 2x Titan X               | 10.2         |
+| 172.16.33.15 | shala.cs.uml.edu  | 1x RTX 3090, 1x GTX 1080 | 11.0         |
+| 172.16.33.14 | ishkur.cs.uml.edu | 2x RTX 3090              | 11.0         |
+| 172.16.33.9  | marduk.cs.uml.edu | 2x GTX 1080, 1x Titan X  | 11.0         |
 
 CPU-only:
 
@@ -31,17 +31,17 @@ If you don’t currently have an account, you can use the teaching lab’s works
 
 ### Detailed Shala spec
 
-| thing        | thing spec       |
-|--------------|-------------------|
-| CPU	         | Intel Boxed Core i7-6850K |
-| Motherboard 	| ASRock ATX DDR4 Motherboard | 
-| RAM.        	| 64GB DDR4 2400 |
+| thing           | thing spec        |
+|-----------------|-------------------|
+| CPU	            | Intel Boxed Core i7-6850K |
+| Motherboard    	| ASRock ATX DDR4 Motherboard | 
+| RAM.           	| 64GB DDR4 2400 |
 | Full Tower Case	| Corsair Obsidian Series 750D |
-| SSD	         | Samsung 850 EVO 500GB |
-| HDD	         | WD Red Pro 3TB |
-| Power Supply	| EVGA Supernova G2 1300W |
-| CPU Cooler	  | Cooler Master Hyper 212 EVO |
-| GPU      	  | EVGA GeForce GTX 1080 |
+| SSD	            | Samsung 850 EVO 500GB |
+| HDD	            | WD Red Pro 3TB |
+| Power Supply   	| EVGA Supernova G2 1300W |
+| CPU Cooler	     | Cooler Master Hyper 212 EVO |
+| GPU      	      | EVGA GeForce GTX 1080 |
 
 ### Detailed Inanna spec
 
@@ -52,7 +52,7 @@ https://pcpartpicker.com/list/NQ8gD2
 Follow [this guide](https://gist.github.com/wangruohui/df039f0dc434d6486f5d4d098aa52d07)
 
 Recommendations: 
-  * Do not install via apt get. It will cause a lot pain to the next person who will be updating the drivers.
+  * **Do not install via apt get**. It will cause a lot pain to the next person who will be updating the drivers.
   * Use `Latest Long Lived Branch` for drivers
   * Remember to `sudo apt-get install build-essential dkms` and `chmod +x` the installation file. Read the guide carefuly!
   * Do everything in tmux session in case ssh connection is interrupted (it will!)
