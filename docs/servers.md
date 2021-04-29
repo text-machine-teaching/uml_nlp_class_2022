@@ -61,7 +61,8 @@ The easiest way to install everything:
         sudo apt-get purge "cuda*"
         sudo apt autoremove
         ```
-    1. Remove manually installed CUDA versions. Go to `/usr/local/cuda-XX.X/bin` and run something like `sudo chmod + cuda-uninstall; sudo sh cuda-uninstall` 
+    1. Remove manually installed CUDA versions. Go to `/usr/local/cuda-XX.X/bin` and run something like `sudo chmod + cuda-uninstall; sudo sh cuda-uninstall`
+    2. Remove CUDNN (`sudo rm -rf /usr/local/cuda`)
 5. **Install/upgrade dependencies** `sudo apt-get install build-essential dkms`
 6. Go to the pytorch website and look up the latest CUDA version they support.
 7. Go to the NVIDIA website and download CUDA installer
@@ -91,7 +92,7 @@ The easiest way to install everything:
 
 13. To add CUDA to PATH, open `sudo vim /etc/environment` and replace `:/usr/local/cuda-VERSION.NUMBER/bin` with a new link. **Replace**, do not just add.
 14. To update LD_LIBRARY_PATH, create file `sudo vim /etc/ld.so.conf.d/cuda.conf` with content `/usr/local/cuda-11.2/lib64`. After that execute `sudo ldconfig`
-15. Install CUDNN (read recommendations below)
+15. Install CUDNN (read recommendations below). Download it and unpack via `sudo tar zxvf cudnn-VERSION.tgz`
 16. Reboot the server and check that `torch.matmul(torch.ones(3, 4, device="cuda"), torch.ones(4, 5, device="cuda"))` works
 17. Check that `nvidia-smi` and `nvcc --version` work and show the same driver version (if they show different driver versions you fogtot to delete something and it is going to hurt you in the future)
 18. **!!Update this guide!!** CUDA installation is always a pain and the details change from time to time. You will thank yourself in ~3 months.
