@@ -64,6 +64,7 @@ Recommendations:
 
 Possible issues:
   * "Existing package manager installation of the driver found" - the problem is that somebody installed CUDA via package manager (you sick bastard!). You need to find what exactly is installed and delete is using `sudo apt-get purge <PACKAGE_NAME>` and to execute `sudo apt autoremove` after that. You can also try to do this (but the result and safety of these commands are not guaranteeed):
+  * Unmet dependencies: look at what is exectly unmet and delete the packages that require something.
 
 ```bash
 sudo apt-get purge cuda
