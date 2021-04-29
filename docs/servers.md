@@ -49,15 +49,59 @@ https://pcpartpicker.com/list/NQ8gD2
 
 ## Installing drivers and CUDA
 
-Follow [this guide](https://gist.github.com/wangruohui/df039f0dc434d6486f5d4d098aa52d07)
+The easiest way to install everything:
+1. **Do not install via apt get**. It will cause a lot pain to the next person who will be updating the drivers.
+2. **Do not install drivers manually**, let CUDA installer do it
+3. **Use tmux** during the installation process. If you accidentally close your ssh session while intaller works, it's going to be a huge mess.
+4. **(Important)** Delete previously installed drivers
+    1. Remove stuff installed via apt-get
+        ```bash
+        sudo apt-get purge cuda
+        sudo apt-get purge nvidia-cuda-toolkit
+        sudo apt-get purge "cuda*"
+        sudo apt autoremove
+        ```
+    1. Remove manually installed CUDA versions. Go to `/usr/local/cuda-XX.X/bin` and run something like `sudo chmod + cuda-uninstall; sudo sh cuda-uninstall` 
+5. **Install/upgrade dependencies** `sudo apt-get install build-essential dkms`
+6. Go to the pytorch website and look up the latest CUDA version they support.
+7. Go to the NVIDIA website and download CUDA installer
+8. **Allow file execution** `chmod + cuda_installer_name.run`
+9. **Run it as root** `sudo sh cuda_installer_name.run`
+10. Accept EULA and deselect "examples" and "developer" stuff. We only need the driver and CUDA itself
+11. Follow the wizard instructions
+12. At the end of the installation process, you going to see something like this
+
+  ```bash
+  ===========
+  = Summary =
+  ===========
+
+  Driver:   Installed
+  Toolkit:  Installed in /usr/local/cuda-11.2/
+  Samples:  Not Selected
+
+  Please make sure that
+   -   PATH includes /usr/local/cuda-11.2/bin
+   -   LD_LIBRARY_PATH includes /usr/local/cuda-11.2/lib64, or, add /usr/local/cuda-11.2/lib64 to /etc/ld.so.conf and run ldconfig as root
+
+  To uninstall the CUDA Toolkit, run cuda-uninstaller in /usr/local/cuda-11.2/bin
+  To uninstall the NVIDIA Driver, run nvidia-uninstall
+  Logfile is /var/log/cuda-installer.log
+  ```
+
+13. To add CUDA to PATH, open `sudo vim /etc/environment` and replace `:/usr/local/cuda-VERSION.NUMBER/bin` with a new link. **Replace**, do not just add.
+14. To update LD_LIBRARY_PATH, create file `sudo vim /etc/ld.so.conf.d/cuda.conf` with content `/usr/local/cuda-11.2/lib64`. After that execute `sudo ldconfig`
+15. Install CUDNN (read recommendations below)
+16. Reboot the server and check that `torch.matmul(torch.ones(3, 4, device="cuda"), torch.ones(4, 5, device="cuda"))` works
+17. Check that `nvidia-smi` and `nvcc --version` work and show the same driver version (if they show different driver versions you fogtot to delete something and it is going to hurt you in the future)
+18. **!!Update this guide!!** CUDA installation is always a pain and the details change from time to time. You will thank yourself in ~3 months.
+
+If what you tried does not work, follow [this guide](https://gist.github.com/wangruohui/df039f0dc434d6486f5d4d098aa52d07)
 
 Recommendations: 
-  * **Do not install via apt get**. It will cause a lot pain to the next person who will be updating the drivers.
-  * Use `Latest Long Lived Branch` for drivers
   * Remember to `sudo apt-get install build-essential dkms` and `chmod +x` the installation file. Read the guide carefuly!
   * Do everything in tmux session in case ssh connection is interrupted (it will!)
   * Call `sudo ./cuda_10.2.89_440.33.01_linux.run` instead of `./cuda_10.2.89_440.33.01_linux.run`
-  * After installing cuda you may see a warning `Incomplete installation! This installation did not install the CUDA Driver.` - don't worry, just ignore it (you already have the driver)
   * Remember to install [cuDNN](https://developer.nvidia.com/cudnn)! Select "cuDNN Library for Linux" instead of "cuDNN Runtime Library for Ubuntu18.04 (Deb)" because you don't want to suffer deleteing .deb packages when reinstalling the CUDA next time. You cannot use `wget` to download cuDNN (because NVIDIA sucks) so download it to your computer and `scp` to the server.
   * To download cudnn directly to the server use [this hack](https://stackoverflow.com/questions/31279494/how-to-install-cudnn-from-command-line)
   * Untar cuDNN as `sudo` to create symlinks
