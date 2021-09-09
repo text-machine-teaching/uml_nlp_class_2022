@@ -17,14 +17,6 @@ If you searched for something here and did not find it, it would be nice to add 
 
 To add/update this wiki, simply press `Edit on GitHub` button in the top-right corner. You have to be a part of `github.com/text-machine-lab <https://github.com/text-machine-lab/>`_ in order to push directly into the master branch, and this is a recommended way to do it. The website is automatically updated after a push to the repository, so you don't need to do anything else (just to wait about a minute or so). More can be found in the `Usage` section.
 
-Recommendations:
-
-* *Bad article is better than no article.*
-* Keep wiki structure as flat as possible.
-* Use markdown syntax to make your post better formatted.
-* Grammarly is an excellent resource to check your writing before submission.
-
-
 Contents:
 =====
 
