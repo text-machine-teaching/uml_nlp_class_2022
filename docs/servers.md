@@ -49,6 +49,32 @@ https://pcpartpicker.com/list/NQ8gD2
 
 ## Installing drivers and CUDA
 
+### Ubuntu 20.04
+
+1. Remove stuff installed via apt-get
+    ```bash
+    sudo apt-get purge cuda
+    sudo apt-get purge nvidia-cuda-toolkit
+    sudo apt-get purge "cuda*"
+    sudo apt autoremove
+    ```
+2. Go to [Nvidia website](https://developer.nvidia.com/cuda-downloads) select Linux, x86, Ubuntu, 20.04, deb (network). It will show you commands like these, execute them.
+
+```bash
+wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/cuda-ubuntu2004.pin
+sudo mv cuda-ubuntu2004.pin /etc/apt/preferences.d/cuda-repository-pin-600
+sudo apt-key adv --fetch-keys https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/7fa2af80.pub
+sudo add-apt-repository "deb https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/ /"
+sudo apt-get update
+sudo apt-get -y install cuda
+```
+3. Reload the computer `sudo reboot`
+4. Follow official Nvidia tutorial to install CUDNN. To download cudnn directly to the server using wget use [this hack](https://stackoverflow.com/questions/31279494/how-to-install-cudnn-from-command-line)
+5. Check that `torch.cuda.is_available()` **and** that something like `torch.zeros(10).cuda()` works. Fix all warnings or errors if they appear.
+
+
+#### Ubuntu < 20.04
+
 The easiest way to install everything:
 1. **Do not install via apt get**. It will cause a lot pain to the next person who will be updating the drivers.
 2. **Do not install drivers manually**, let CUDA installer do it
